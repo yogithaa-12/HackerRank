@@ -1,0 +1,18 @@
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    float s,l,b,r,ba,h;
+    
+    scanf("%f%f%f%f%f%f",&s,&l,&b,&r,&ba,&h);
+    printf("Area of Square=%.0f\n",s*s);
+    printf("Area of Rectangle=%.0f\n",l*b);
+    printf("Area of Circle=%.2f\n",floor((3.14159*r*r)*100)/100);
+    printf("Area of Triangle=%.0f",(0.5)*ba*h);
+    return 0;
+}
