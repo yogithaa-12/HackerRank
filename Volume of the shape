@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define PI 3.14159265358979323846
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    float l,b,h,r;
+    scanf("%f\t%f\t%f\t%f",&l,&b,&h,&r);
+    printf("Volume of Cubiod=%.2f\n",l*b*h);
+    printf("Volume of Cylinder=%.2f\n",floor(((PI)*(r*r*h))*100)/100);
+    printf("Volume of Cone=%.2f\n",floor(((PI)*(r*r)*h/3)*100)/100);
+    printf("Volume of Shpere=%.2f\n",floor(((1.33333)*(PI)*(r*r*r))*100)/100);
+    return 0;
+}
