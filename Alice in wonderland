@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,temp,sum=0;
+    scanf("%d",&n);
+    temp=n;
+    while(temp>0){
+        int rem=temp%10;
+        sum+=rem;
+        temp/=10;
+    }
+    printf("Bird said:%d\n",n);
+    printf("Alice must go in path-%d",sum);
+    return 0;
+}
