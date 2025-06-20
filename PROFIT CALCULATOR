@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    printf("Number of copies sold:%d\n",a);
+    printf("Cost of each copy:%d\n",b);
+    printf("Cost spent by agency on each newspaper:%d\n",c);
+    printf("The profit obtained is Rs.%.2f",(float)(a*b)-(a*c)-100);
+    return 0;
+    return 0;
+}
