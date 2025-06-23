@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define PI 3.14159
+int main() {
+
+    int a,b,c,d,e,f,g;
+    scanf("%d\t%d\t%d\t%d\t%d\t%d\t%d",&a,&b,&c,&d,&e,&f,&g);
+    printf("Perimeter of Square:%d\n",4*a);
+    printf("Perimeter of Rectangle:%d\n",2*(b+c));
+    printf("Perimeter of Circle:%.2f\n",floor((2*PI*d)*100)/100);
+    printf("Perimeter of Triangle:%d",e+f+g);
+    return 0;
+}

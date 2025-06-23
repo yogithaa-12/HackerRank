@@ -5,14 +5,11 @@
 
 int main() {
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
-    int a,b;
-    char ch,c;
+    int a;
+    char ch;
     scanf("%d ",&a);
-    scanf("%c",&ch);
-    c=(char)a;
-    b=(int)ch;
-    printf("Integer of %d is %c\n",a,c);
-    printf("Character of %c is %d",ch,b);
+    scanf("%c ",&ch);
+    printf("Integer of %d is %c\n",a,(char)a);
+    printf("Character of %c is %d", ch, (int)ch);
     return 0;
 }

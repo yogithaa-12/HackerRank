@@ -7,9 +7,10 @@
 #include <stdbool.h>
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int num;
-    scanf("%d", &num);
-    printf("%d", (num%10)+(num/1000));
+     int a,first,last;
+    scanf("%d",&a);
+    first=a/1000;
+    last=a%10;
+    printf("%d",first+last);
     return 0;
 }

@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+int main() {
+    char str1[100], str2[100];
+    int char_count1[26] = {0};
+    int char_count2[26] = {0};
+    int i;
+    bool is_anagram = true;
+
+    scanf("%s", str1);
+    scanf("%s", str2);
+
+    if (strlen(str1) != strlen(str2)) {
+        is_anagram = false;
+    } else {
+        for (i = 0; str1[i] != '\0'; i++) {
+            char_count1[str1[i] - 'a']++;
+            char_count2[str2[i] - 'a']++;
+        }
+
+        for (i = 0; i < 26; i++) {
+            if (char_count1[i] != char_count2[i]) {
+                is_anagram = false;
+                break;
+            }
+        }
+    }
+
+    if (is_anagram) {
+        printf("The given strings are an anagram");
+    } else {
+        printf("The given strings are not an anagram");
+    }
+
+    return 0;
+}

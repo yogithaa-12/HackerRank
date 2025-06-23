@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int sumOfDivisors(int n) {
+int sum = 0;
+for (int i = 1; i <= n; i++) {
+    if (n % i == 0) {
+           sum += i;
+        }
+    }
+    return sum;
+}
+
+int main() {
+    int num1, num2;
+    scanf("%d %d", &num1, &num2);
+
+    double abundancyIndex1 = (double)sumOfDivisors(num1) / num1;
+    double abundancyIndex2 = (double)sumOfDivisors(num2) / num2;
+
+    if (abundancyIndex1 == abundancyIndex2) {
+        printf("Friendly Pair\n");
+    } else {
+        printf("Not Friendly Pair\n");
+    }
+
+    return 0;
+}

@@ -7,10 +7,10 @@
 #include <stdbool.h>
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int a,b;
-    scanf("%d%d",&a,&b);
-    printf("%d\n",2*(a+b));
-    printf("%d",a*b);
+     int len,br;
+    scanf("%d %d",&len,&br);
+  
+    printf("%d\n",(2*(len+br)));
+      printf("%d",len*br);
     return 0;
 }

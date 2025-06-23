@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+  int m, n;
+  scanf("%d %d", &m, &n);
+
+  int accounts[m][n];
+  for (int i = 0; i < m; i++) {
+    for (int j = 0; j < n; j++) {
+      scanf("%d", &accounts[i][j]);
+    }
+  }
+
+  int maxWealth = 0;
+  for (int i = 0; i < m; i++) {
+    int currentWealth = 0;
+    for (int j = 0; j < n; j++) {
+      currentWealth += accounts[i][j];
+    }
+    if (currentWealth > maxWealth) {
+      maxWealth = currentWealth;
+    }
+  }
+
+  printf("Richest Customer Wealth is %d", maxWealth);
+
+  return 0;
+}

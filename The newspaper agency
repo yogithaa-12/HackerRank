@@ -7,9 +7,10 @@
 #include <stdbool.h>
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int a,b,c;
-    scanf("%d%d%d",&a,&b,&c);
-    printf("%d", (a*b)-(a*c)-100);
+    int w,x,y;
+    scanf("%d\t%d\t%d",&w,&x,&y);
+    int cost=100;
+    int profit=(w*(x-y))-cost;
+    printf("%d",profit);
     return 0;
 }

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int sum_recursive(int n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n + sum_recursive(n - 1);
+  }
+}
+
+int main() {
+  int n;
+  scanf("%d", &n);
+
+  if (n >= 1 && n <= 50) {
+    int sum = sum_recursive(n);
+    printf("The sum of numbers from 1 to %d : %04d\n", n, sum);
+  } else {
+    printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!\n");
+  }
+
+  return 0;
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a,b,temp;
+    scanf("%d %d",&a,&b);
+    printf("The First value before Swapping:%d\n",a);
+    printf("The Second value before Swapping:%d\n",b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("The First value after Swapping:%d\n",a);
+    printf("The Second value after Swapping:%d",b); 
+    return 0;
+}

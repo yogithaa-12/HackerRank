@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,temp,rem,sum=0;
+    scanf("%d",&n);
+    temp=n;
+        while(temp>0){
+            rem=temp%10;
+            sum+=rem;
+            temp=temp/10;
+        }
+       if(n%sum==0){
+            printf("Harshad Number");
+        }
+        else{
+            printf("Not Harshad Number");
+        }
+        
+    
+    return 0;
+}

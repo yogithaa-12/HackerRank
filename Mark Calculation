@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char ch[100];
+    int a,b,c,d,e;
+    scanf("%s",ch);
+    scanf("%d\t%d\t%d\t%d\t%d",&a,&b,&c,&d,&e);
+    printf("Name of the Student:%s\n",ch);
+    printf("Total marks:%d\n",(a+b+c+d+e));
+    printf("Average marks:%.1f",(a+b+c+d+e)/5.0);
+    return 0;
+}

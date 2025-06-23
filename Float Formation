@@ -7,12 +7,12 @@
 #include <stdbool.h>
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    float f;
-    scanf("%f",&f);
-    printf("%.6f\n",f);
-    printf("%.4f\n",f);
-    printf("%.2f\n",f);
-    printf("%.0f",f);
+    float a;
+    scanf("%f",&a);
+    printf("%.6f\n",a);
+    printf("%.4f\n",a);
+    printf("%.2f\n",a);
+    printf("%.0f",a);
+    
     return 0;
 }

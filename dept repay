@@ -7,14 +7,13 @@
 #include <stdbool.h>
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int a , b ,c;
-    float si,e,d,f;
-    scanf("%d\n%d\n%d",&a,&b,&c);
-    si=(float)((a*b*c)/100);
-    e=(float)a+si;
-    d=(float)(si*2/100);
-    f=(e-d);
-    printf("%.2f\n%.2f\n%.2f\n%.2f",si,e,d,f);
+    int a,b,c;
+    float interest,amount,discount,final;
+    scanf("%d\n%d\n%d\n",&a,&b,&c);
+    interest=(float)(a*b*c)/100;
+    amount=(float)interest+a;
+    discount=(float)(interest*2/100);
+    final=amount-discount;
+    printf("%.2f\n%.2f\n%.2f\n%.2f",interest,amount,discount,final);
     return 0;
 }

@@ -5,13 +5,13 @@
 
 int main() {
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    int a,b,c;
-    scanf("%d%d%d",&a,&b,&c);
-    printf("Number of copies sold:%d\n",a);
-    printf("Cost of each copy:%d\n",b);
-    printf("Cost spent by agency on each newspaper:%d\n",c);
-    printf("The profit obtained is Rs.%.2f",(float)(a*b)-(a*c)-100);
-    return 0;
+    int w,x,y;
+    scanf("%d\t%d\t%d",&w,&x,&y);
+    int cost=100;
+    int profit=(w*(x-y))-cost;
+    printf("Number of copies sold:%d\n",w);
+    printf("Cost of each copy:%d\n",x);
+    printf("Cost spent by agency on each newspaper:%d\n",y);
+    printf("The profit obtained is Rs.%.2f",(float)profit);   
     return 0;
 }

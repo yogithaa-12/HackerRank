@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void printNaturalNumbers(int n) {
+  if (n >= 1 && n <= 50) {
+    printf("The first %d Natural Numbers are:\n", n);
+    for (int i = 1; i <= n; i++) {
+      printf("%d ", i);
+    }
+    printf("\n");
+  } else {
+    printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!\n");
+  }
+}
+
+int main() {
+  int n;
+  scanf("%d", &n);
+  printNaturalNumbers(n);
+  return 0;
+}

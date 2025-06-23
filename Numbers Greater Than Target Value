@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n, g, k=0;
+    scanf("%d", &n);
+    int a[n];
+    int s=0;
+    for(int i=0;i<n;i++){
+        scanf("%d", &a[i]);
+    }
+    scanf("%d", &g);
+    for(int i=0; i<n; i++){
+        for(int j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j]){
+                int temp = a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    printf("The Target values are ");
+    for(int i=0;i<n;i++){
+        if(a[i]>g){
+            printf("%d ", a[i]);
+            s+=a[i];
+            ++k;
+        }
+    }
+    printf("\nsum of value is %d\nAverage of the value is %.1f", s, (float)s/k);
+    
+    return 0;
+}

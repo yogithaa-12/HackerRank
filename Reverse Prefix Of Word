@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+void reverse(char str[], int start, int end) {
+    int temp;
+    while (start < end) {
+        temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    char word[251];
+    char ch;
+    int len, index = -1;
+
+    scanf("%s", word);
+    scanf(" %c", &ch);
+
+    len = strlen(word);
+
+    for (int i = 0; i < len; i++) {
+        if (word[i] == ch) {
+            index = i;
+            break;
+        }
+    }
+
+    if (index != -1) {
+        reverse(word, 0, index);
+    }
+
+    printf("%s\n", word);
+
+    return 0;
+}

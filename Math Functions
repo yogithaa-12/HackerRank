@@ -7,18 +7,13 @@
 #include <stdbool.h>
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    float f;
-    int a,b,c;
-    scanf("%f",&f);
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    printf("%d\n",(int)floor(f));
-    printf("%d\n",(int)ceil(f));
-    printf("%d\n",(int)sqrt(a));
-    printf("%d",(int)pow(b,c));
-    
-    
+    float a;
+    int b,c,d;
+    scanf("%f",&a);
+    scanf("%d %d %d",&b,&c,&d);
+    printf("%d\n",(int)floor(a));
+    printf("%d\n",(int)ceil(a));
+    printf("%d\n",(int)sqrt(b));
+    printf("%d",(int)pow(c,d));
     return 0;
 }

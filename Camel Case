@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    char eventName[100];
+    fgets(eventName, sizeof(eventName), stdin);
+    eventName[strcspn(eventName, "\n")] = 0;
+
+    int len = strlen(eventName);
+    int i;
+    eventName[0] = toupper(eventName[0]);
+    for (i = 1; i < len; i++) {
+        if (eventName[i - 1] == ' ') {
+            eventName[i] = toupper(eventName[i]);
+        }
+    }
+    char camelCaseName[100];
+    int j = 0;
+    for (i = 0; i < len; i++) {
+        if (eventName[i] != ' ') {
+            camelCaseName[j++] = eventName[i];
+        }
+    }
+    camelCaseName[j] = '\0';
+
+    printf("%s\n", camelCaseName);
+
+    return 0;
+}

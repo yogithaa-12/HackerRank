@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int a;
+    scanf("%d",&a);
+    if(a>0){
+        printf("The Given Number %d is Positive.",a);
+    }
+    else if(a<0){
+        printf("The Given Number %d is Negative.",a);
+    }
+    else{
+        printf("The Given Number %d is Zero.",a);
+    }
+        
+    return 0;
+}

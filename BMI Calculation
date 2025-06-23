@@ -1,0 +1,26 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+     float a,b;
+    scanf("%f\n%f",&a,&b);
+    int bmi=(a/(b*b))*10000;
+    if(bmi<18.5){
+        printf("You are underweight. Have an apple daily.");
+    }
+    else if(bmi>=18.5 && bmi<=24.9){
+        printf("You are normal. Go walking daily and maintain it.");
+    }
+    else if(bmi>24.9 && bmi<=29.9){
+        printf("You are overweight. Go to Gym daily.");
+    }
+    else{
+        printf("You are obese. You need to see a doctor.");
+    }
+    return 0;
+}

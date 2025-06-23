@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    float p=1;
+    float num=0;
+    float mean=0;
+    for(int i=0;i<n;i++){
+        p=p*arr[i];
+    }
+    printf("Product of the array:%.2f\n",p);
+    for(int i=0;i<n;i++){
+        num=num+arr[i];
+        mean=num/n;
+    }
+    printf("Mean of the array:%.3f",floor(mean*1000)/1000);
+    return 0;
+}
